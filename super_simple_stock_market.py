@@ -1,9 +1,18 @@
+"""
+Stock Market Simulation
+
+This script simulates a stock market where stocks can be added, trades recorded,
+and various financial metrics (like Dividend Yield, P/E Ratio, VWSP, and GBCE All Share Index)
+can be calculated and displayed.
+"""
+
 from datetime import datetime, timedelta
 import math
 
-
-# StockMarket class to manage multiple stocks and their trades
 class StockMarket:
+    """
+    StockMarket class to manage multiple stocks and their trades.
+    """
     def __init__(self):
         # Initialize an empty dictionary to store stock by their symbol
         self.stocks = {}
@@ -62,8 +71,10 @@ class StockMarket:
         productOfPrices = math.prod(nonZeroPrices)
         return productOfPrices ** (1/len(nonZeroPrices))
     
-# Stock class representing a single stock in the market
 class Stock:
+    """
+    Stock class representing a single stock in the market.
+    """
     def __init__(self, symbol, type, lastDividend, fixedDividend, parValue):
         # Initialise the stock with given attributes
         self.symbol = symbol # Stock symbol, e.g. 'POP'
@@ -154,9 +165,11 @@ class Stock:
 
         # VWSP Formula: sum(price * quantity) / sum(quantity)
         return totalTradePriceQuantity / totalQuantity
-
-# Trade class to represent individual trades    
+  
 class Trade:
+    """
+    Trade class to represent individual trades.
+    """
     def __init__(self, timestamp, quantity, indicator, price):
         # Initialize a trade with given attributes
         self.timestamp = timestamp # Time when trade occured
@@ -164,8 +177,10 @@ class Trade:
         self.indicator = indicator # 'buy' or 'sell'
         self.price = price # Trade price per share
 
-# User Input class for handling user interactions and inputs related to stock trading
 class UserInput:
+    """
+    User Input class for handling user interactions and inputs related to stock trading.
+    """
     def __init__(self):
         # Initialize with predefined stock symbols and valid trading indicators
         self.stockSymbols = ['TEA', 'POP', 'ALE', 'GIN', 'JOE']
