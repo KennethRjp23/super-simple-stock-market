@@ -182,7 +182,7 @@ class UserInput:
             print("\nAvailable stock symbols:", stockSymbols)
             stockSymbol = input("Enter the stock symbol (or type 'exit' to quit): ").strip().upper()
             if stockSymbol == 'EXIT':
-                print("Exiting the program. Goodbye!")
+                print("\nExiting the program. Goodbye!")
                 return None  # Return None to indicate exit
             elif stockSymbol in self.stockSymbols:
                 return stockSymbol # Return valid stock symbol
