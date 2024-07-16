@@ -1,7 +1,7 @@
 import unittest
 from datetime import datetime, timedelta
 from unittest.mock import patch
-from main import Stock, Trade, StockMarket, UserInput
+from super_simple_stock_market import Stock, Trade, StockMarket, UserInput
 
 # Unit test for the Stock class
 class TestStock(unittest.TestCase):
