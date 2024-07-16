@@ -1,8 +1,9 @@
 """
-Stock Market Simulation
+Simple Stock Market Simulation
 
 This script simulates a stock market where stocks can be added, trades recorded,
-and various financial metrics (like Dividend Yield, P/E Ratio, VWSP, and GBCE All Share Index)
+and various financial metrics (like Dividend Yield, P/E Ratio, Volume Weighted Stock Price, and 
+Global Beverage Copropration Exchange All Share Index)
 can be calculated and displayed.
 """
 
