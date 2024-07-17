@@ -9,7 +9,7 @@ This script simulates a stock market where stocks can be added, trades recorded,
 
 ## Installation
 
-1. Ensure you have Python installed on your system (Python 3.6+ is recommended).
+1. Ensure you have Python installed on your system.
 2. Clone the repository or download the script.
 
 ```bash
